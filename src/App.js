@@ -32,19 +32,31 @@ export default class App extends React.Component {
 
   onCitiesHandler = (e) => {
     e.preventDefault();
-    console.log('cities changer')
+    console.log('cities changer');
     this.setState({
-      cities: 'leg'
+      cities: [
+        {
+          nameCity: 'Chicago'
+        }
+      ]
     })
   }
 
   render() {
-    const citiesProps = this.props.cities;
+    // const citiesProps = this.props.cities.map( city => city {
+      
+    // });
     return (
       <div className="containerCities">
         <div className="container">
           <div className="citiesShow">
-            {citiesProps}
+            {this.state.cities.map((city, i) => (
+              <ul key={i}>
+                  {city.nameCity}
+              </ul>
+            ))
+            }
+            {/* {citiesProps} */}
           </div>
           <div className="citiesShow2">
               <button onClick={this.onCitiesHandler}>Cities Changer</button>
