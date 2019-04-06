@@ -18,6 +18,10 @@ export default class App extends React.Component {
     this.state = {
       cities: [
         {
+          id: 0,
+          nameCity: ''
+        },
+        {
           id: 1,
           nameCity: 'Kielce'
         },
@@ -37,13 +41,12 @@ export default class App extends React.Component {
     e.preventDefault();
     let idCities = this.state.cities.map(( id, i) => (
       <ul key={i}>
-          {id.id}
           {id.nameCity}
       </ul>));
     this.setState({
       cities: [
         {
-          id: idCities,
+          id: idCities.id,
           nameCity: idCities
         }
       ]
@@ -51,18 +54,16 @@ export default class App extends React.Component {
   }
 
   render() {
+    const cit = this.state.cities.map((city, i) => (
+      <ul key={i}>
+          {city.nameCity}
+      </ul>
+    ))
     return (
       <div className="containerCities">
         <div className="container">
           <div className="citiesShow">
-            {this.state.cities.map((city, i) => (
-              <ul key={i}>
-                  {city.nameCity}
-                  {city.id}
-              </ul>
-            ))
-            }
-            {/* {citiesProps} */}
+           {cit[0]}
           </div>
           <div className="citiesShow2">
               <button onClick={this.onCitiesHandler}>Cities Changer</button>
