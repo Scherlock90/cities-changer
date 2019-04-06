@@ -18,12 +18,15 @@ export default class App extends React.Component {
     this.state = {
       cities: [
         {
+          id: 1,
           nameCity: 'Kielce'
         },
         {
+          id: 2,
           nameCity: 'Rzeszów'
         },
         {
+          id: 3,
           nameCity: 'Białystok'
         }
       ]
@@ -32,20 +35,22 @@ export default class App extends React.Component {
 
   onCitiesHandler = (e) => {
     e.preventDefault();
-    console.log('cities changer');
+    let idCities = this.state.cities.map(( id, i) => (
+      <ul key={i}>
+          {id.id}
+          {id.nameCity}
+      </ul>));
     this.setState({
       cities: [
         {
-          nameCity: 'Chicago'
+          id: idCities,
+          nameCity: idCities
         }
       ]
     })
   }
 
   render() {
-    // const citiesProps = this.props.cities.map( city => city {
-      
-    // });
     return (
       <div className="containerCities">
         <div className="container">
@@ -53,6 +58,7 @@ export default class App extends React.Component {
             {this.state.cities.map((city, i) => (
               <ul key={i}>
                   {city.nameCity}
+                  {city.id}
               </ul>
             ))
             }
