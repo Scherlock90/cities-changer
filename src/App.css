@@ -9,7 +9,7 @@ body {
   text-align: center;
 }
 .containerCities{
-  height: 100%;
+  height: -webkit-fill-available;
   width: 100%;
   display: flex;
   align-items: center;
@@ -18,6 +18,7 @@ body {
 }
 .container{
   margin: 8em;
+  width: 600px;
 }
 .citiesShow{
   display: flex;
@@ -25,9 +26,9 @@ body {
   justify-content: center;
   height: 200px;
   width: 200px;
-  color: black;
+  color: #eeff41;
   display: relative;
-  background-color: lightgray;
+  background-color: #00bfa5;
 }
 .citiesShow2{
   display: flex;
@@ -36,5 +37,23 @@ body {
   height: 200px;
   width: 200px;
   display: relative;
-  background-color: gray;
+  background-color: #00796b;
+  color: #eeff41;
+  margin-left: auto;
+  margin-right: auto;
+}
+.citiesShow3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  color: #c6ff00;
+  display: relative;
+  background-color: #004d40;
+  margin-left: auto;
+}
+.buttonStyle{
+  color: #eeff41;
+  background-color: #424242; 
 }

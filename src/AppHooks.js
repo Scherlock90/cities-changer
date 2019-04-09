@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 
-
 export default function AppHooks () {
     const [cities, setCities] = useState([
         {
@@ -28,9 +27,27 @@ export default function AppHooks () {
     // }
     console.log(cities[activeCity].nameCity);
     return(
-        <div key={activeCity}>
-            {cities[activeCity].nameCity}
-            <button onClick={e => randomCities(e)}> Change</button>
+        <div className="containerCities">
+            <div className="container">
+                <div className="citiesShow" key={activeCity}>
+                    {cities[activeCity].nameCity}
+                </div>
+                <div className="citiesShow2">
+                    <button className="buttonStyle" onClick={e => randomCities(e)}> Change</button>
+                </div>
+                <div className="citiesShow3">
+                    <ChildComponent />
+                </div>
+            </div>
         </div>
     )
 }
+
+function ChildComponent () {
+    return(
+        <div>
+            Child Component
+        </div>
+    )
+}
+
