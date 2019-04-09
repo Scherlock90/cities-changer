@@ -14,7 +14,9 @@ export default function AppHooks () {
         }
     ])
     const [activeCity, setActiveCity] = useState(0);
+    
     let len = cities.length;
+
     function randomCities (activeCity) {
         setActiveCity(Math.floor(Math.random() * len))
         return activeCity
@@ -28,7 +30,7 @@ export default function AppHooks () {
     return(
         <div key={activeCity}>
             {cities[activeCity].nameCity}
-            <button onClick={e => randomCities(e, cities)}> Change</button>
+            <button onClick={e => randomCities(e)}> Change</button>
         </div>
         
     )
