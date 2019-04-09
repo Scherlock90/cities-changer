@@ -13,25 +13,21 @@ export default function AppHooks () {
             nameCity: "Białystok"
         }
     ])
+    const [activeCity, setActiveCity] = useState(0);
     let len = cities.length;
-    function randomCities (e, cities) {
-        let randCiti = [Math.floor(Math.random() * len)];
-        setCities(cities[randCiti]);
-        return cities
+    function randomCities (activeCity) {
+        setActiveCity(Math.floor(Math.random() * len))
+        return activeCity
     }
-    // let citki = cities.map((cit, i) => {
-    //     return(
-    //     <div key={i}>
-    //         {cit.nameCity}
-    //     </div>)
-    //     }
-    // )
-    
-    console.log(cities.nameCity);
+    // function randomCities (e, cities) {
+    //     let randCiti = [Math.floor(Math.random() * len)];
+    //     setCities(cities[randCiti]);
+    //     return cities
+    // }
+    console.log(cities[activeCity].nameCity);
     return(
-        <div>
-            {/* {citki} */}
-            {cities.nameCity}
+        <div key={activeCity}>
+            {cities[activeCity].nameCity}
             <button onClick={e => randomCities(e, cities)}> Change</button>
         </div>
         
