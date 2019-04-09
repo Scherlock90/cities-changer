@@ -1,17 +1,6 @@
 import React from 'react';
 import './App.css';
 
-// const cities = [
-//   {
-//     nameCity: 'Kielce'
-//   },
-//   {
-//     nameCity: 'Rzeszów'
-//   },
-//   {
-//     nameCity: 'Białystok'
-//   }
-// ]
 export default class App extends React.Component {
   constructor(props) {
     super(props);
