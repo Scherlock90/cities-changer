@@ -11,7 +11,6 @@ function ChildComponent (props) {
     })
     return(
         <div key={props.activeCity}>
-            Child Component: 
             {citiesProps[props.activeCity]}
             {props.children}
         </div>
@@ -38,11 +37,6 @@ export default function AppHooks () {
         setActiveCity(Math.floor(Math.random() * len))
         return activeCity
     }
-    // function randomCities (e, cities) {
-    //     let randCiti = [Math.floor(Math.random() * len)];
-    //     setCities(cities[randCiti]);
-    //     return cities
-    // }
     console.log(cities[activeCity].nameCity);
     return(
         <div className="containerCities">
@@ -59,7 +53,7 @@ export default function AppHooks () {
             </div>
         </div>
     )
-}
+};
 
 
 

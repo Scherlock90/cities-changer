@@ -29,6 +29,7 @@ body {
   color: #eeff41;
   display: relative;
   background-color: #00bfa5;
+  border-radius: 50%;
 }
 .citiesShow2{
   display: flex;
@@ -41,6 +42,7 @@ body {
   color: #eeff41;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
 }
 .citiesShow3{
   display: flex;
@@ -52,6 +54,7 @@ body {
   display: relative;
   background-color: #004d40;
   margin-left: auto;
+  border-radius: 50%;
 }
 .buttonStyle{
   color: #eeff41;
