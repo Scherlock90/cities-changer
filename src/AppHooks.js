@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
 
 function ChildComponent (props) {
+    const [propCities, setPropCities] = useState(props.cities)
+
+    console.log(propCities.nameCity);
     return(
         <div key={props.activeCity} >
-            {props.cities[props.activeCity].nameCity}
+            {propCities[props.activeCity].nameCity}
         </div>
     )
 }
