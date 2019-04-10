@@ -1,5 +1,21 @@
 import React, {useState} from 'react';
 
+function ChildComponent (props) {
+    return(
+        <div>
+            {props.children}
+            Child Component
+            {props.cities.map((cit, i) => {
+                return (
+                    <div key={i}>
+                        {cit.nameCity}
+                    </div>
+                )
+            })}
+        </div>
+    )
+}
+
 export default function AppHooks () {
     const [cities, setCities] = useState([
         {
@@ -36,18 +52,12 @@ export default function AppHooks () {
                     <button className="buttonStyle" onClick={e => randomCities(e)}> Change</button>
                 </div>
                 <div className="citiesShow3">
-                    <ChildComponent />
+                    <ChildComponent cities={cities} />
                 </div>
             </div>
         </div>
     )
 }
 
-function ChildComponent () {
-    return(
-        <div>
-            Child Component
-        </div>
-    )
-}
+
 
