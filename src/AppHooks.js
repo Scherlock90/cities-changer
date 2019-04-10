@@ -31,9 +31,8 @@ export default function AppHooks () {
     ])
     const [activeCity, setActiveCity] = useState(0);
 
-    let len = cities.length;
-
     function randomCities (activeCity) {
+        let len = cities.length;
         setActiveCity(Math.floor(Math.random() * len))
         return activeCity
     }
