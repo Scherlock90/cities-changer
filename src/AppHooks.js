@@ -45,7 +45,7 @@ export default function AppHooks () {
                     {cities[activeCity].nameCity}
                 </div>
                 <div className="citiesShow2">
-                    <button className="buttonStyle" onClick={e => randomCities(e)}> Change</button>
+                    <a class="waves-effect waves-light  lime accent-2 btn" onClick={e => randomCities(e)}>Random Cities</a>
                 </div>
                 <div className="citiesShow3">
                     <ChildComponent cities={cities} activeCity={activeCity} />

@@ -56,7 +56,22 @@ body {
   margin-left: auto;
   border-radius: 50%;
 }
+.citiesShow:hover{
+  background-color: #212121;
+}
+.citiesShow2:hover{
+  background-color: #212121;
+}
+.citiesShow3:hover{
+  background-color: #212121; 
+}
+
 .buttonStyle{
   color: #eeff41;
   background-color: #424242; 
+}
+.btn{
+  color: #212121;
+  font-weight: bold;
+  cursor: pointer;
 }
