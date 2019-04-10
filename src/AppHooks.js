@@ -1,17 +1,19 @@
 import React, {useState} from 'react';
 
 function ChildComponent (props) {
+    console.log(props.activeCity)
+    let citiesProps = props.cities.map((cit, i) => {
+        return (
+            <div key={i}>
+                {cit.nameCity}
+            </div>
+        )
+    })
     return(
-        <div>
+        <div key={props.activeCity}>
+            Child Component: 
+            {citiesProps[props.activeCity]}
             {props.children}
-            Child Component
-            {props.cities.map((cit, i) => {
-                return (
-                    <div key={i}>
-                        {cit.nameCity}
-                    </div>
-                )
-            })}
         </div>
     )
 }
@@ -52,7 +54,7 @@ export default function AppHooks () {
                     <button className="buttonStyle" onClick={e => randomCities(e)}> Change</button>
                 </div>
                 <div className="citiesShow3">
-                    <ChildComponent cities={cities} />
+                    <ChildComponent cities={cities} activeCity={activeCity} />
                 </div>
             </div>
         </div>
