@@ -14,9 +14,6 @@ function ChildComponent (props) {
     // it prior to unmounting.
     return () => console.log('unmounting...');
     })
-    
-
-    console.log(propCities.nameCity);
     return(
         <div key={props.activeCity} >
             {propCities[props.activeCity].nameCity}

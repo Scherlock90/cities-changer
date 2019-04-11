@@ -120,7 +120,7 @@ body {
 .container .citiesShow3.cit3:hover
 {
   opacity: 1;
-  background: linear-gradient(#e65100, #ffd180, #ff6d00)
+  background: linear-gradient(#ffc107, #ffd740 )
 }
 .buttonStyle{
   color: #eeff41;
