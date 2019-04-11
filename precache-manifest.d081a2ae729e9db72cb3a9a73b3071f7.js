@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/cities-changer/static/js/runtime~main.e17815ac.js"
   },
   {
-    "revision": "a148c8fe874b4674a11d",
+    "revision": "07a97098fcb06aa352d6",
     "url": "/cities-changer/static/js/main.844a673d.chunk.js"
   },
   {
@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "/cities-changer/static/js/2.c2695c00.chunk.js"
   },
   {
-    "revision": "a148c8fe874b4674a11d",
-    "url": "/cities-changer/static/css/main.9cc35edc.chunk.css"
+    "revision": "07a97098fcb06aa352d6",
+    "url": "/cities-changer/static/css/main.08df980b.chunk.css"
   },
   {
-    "revision": "4cf87f963e2a51a4e110a5832718f0df",
+    "revision": "84a12423efeeb6108d483cb5b6555637",
     "url": "/cities-changer/index.html"
   }
 ];
