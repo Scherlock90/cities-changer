@@ -2,14 +2,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #fafafa;
+  background-color: lightblue;
+  height: -webkit-fill-available;
+  justify-content: center;
+  display: flex;
+  align-content: center;
 }
 
 .App {
   text-align: center;
 }
 .containerCities{
-  height: auto;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -17,8 +21,8 @@ body {
   background-color: lightblue;
 }
 .container{
-  margin: 8em;
   width: 600px;
+  padding: 4em;
 }
 .container .citiesShow
 {
@@ -114,13 +118,13 @@ body {
 .container .citiesShow2.cit2:hover
 {
   opacity: 1;
-  background: linear-gradient( #eeff41, #f4ff81)
+  background: linear-gradient( #eeff41, #454b0b)
 }
 .container .citiesShow3.cit3:hover ~ .bg,
 .container .citiesShow3.cit3:hover
 {
   opacity: 1;
-  background: linear-gradient(#ffc107, #ffd740 )
+  background: linear-gradient(#ffc107, #6b5710 )
 }
 .buttonStyle{
   color: #eeff41;
@@ -130,4 +134,32 @@ body {
   color: #212121;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1400px) 
+{
+  .container{
+    padding: 2em;
+  }
+  .container .citiesShow 
+  {
+    height: 170px;
+    width: 170px;
+  }
+  .container .citiesShow2 
+  {
+    height: 180px;
+    width: 180px;
+  }
+  .container .citiesShow3 
+  {
+    height: 190px;
+    width: 190px;
+  }
+}
+@media only screen and (max-width: 600px) 
+{
+   .container{
+    width: 100%;
+   }
 }
