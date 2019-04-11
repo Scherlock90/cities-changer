@@ -1,62 +1,74 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import './App.css';
+
+function ChildComponent (props) {
+    const [propCities, setPropCities] = useState(props.cities)
+
+    useEffect(() => {
+      // This gets called after every render, by default
+    // (the first one, and every one after that)
+    console.log('render! ' + propCities[props.activeCity].nameCity);
+
+    // If you want to implement componentWillUnmount,
+    // return a function from here, and React will call
+    // it prior to unmounting.
+    return () => console.log('unmounting...');
+    })
+
+    return(
+        <div key={props.activeCity} >
+            {propCities[props.activeCity].nameCity}
+        </div>
+    )
+}
 
 export default function AppHooks () {
     const [cities, setCities] = useState([
         {
-            nameCity: 'Kraków '
+            nameCity: 'Kraków'
         },
         {
-            nameCity: 'Kielce '
+            nameCity: "Kielce"
         },
         {
-            nameCity: 'Białystok '
+            nameCity: "Białystok"
+        },
+        {
+            nameCity: "Wrocław"
+        },
+        {
+            nameCity: "Gdańsk"
+        },
+        {
+            nameCity: "Poznań"
         }
-    ]);
-    const [random, setRandom] = useState(0);
+    ])
+    const [activeCity, setActiveCity] = useState(0);
 
-    function getRandom(items) {
-        return items[Math.floor(Math.random()*items.length)];
-      }
-
-    function onCitiesChanger (e, cities) {
-        setCities(cities);
-        return cities
+    function randomCities (activeCity) {
+        let len = cities.length;
+        setActiveCity(Math.floor(Math.random() * len))
+        return activeCity
     }
-    
-    function handleGetNameClick (e, cities) {
-        setCities(getRandom(cities))
-        return cities
-      };
-
-    const listCities = cities.map((cit) => cit.nameCity);
+    console.log(cities[activeCity].nameCity);
     return(
-         <div className="containerCities">
+        <div className="containerCities">
             <div className="container">
-                <div className="citiesShow">
-                    {cities.nameCity}
-                    {listCities.filter((cit2, index) => (
-                        <CitiesThumb key={index} cities={cit2}/>
-                    ))}
+                <div>
+                    <div className="citiesShow cit1" key={activeCity}>
+                        {cities[activeCity].nameCity}
+                    </div>
+                    <div className="bg"></div>
+                    <div className="citiesShow2 cit2">
+                        <a className="waves-effect waves-light  lime accent-2 btn" onClick={e => randomCities(e)}>Random Cities</a>
+                    </div>
+                    <div className="bg"></div>
+                    <div className="citiesShow3 cit3">
+                        <ChildComponent cities={cities} activeCity={activeCity} />
+                    </div>
+                    <div className="bg"></div>
                 </div>
-            <div className="citiesShow2">
-                <button onClick={onCitiesChanger}>Cities</button>
-                <button onClick={handleGetNameClick}>Cit</button>
-                {/* <button onClick={() => setCities(cities[0])}>Cities</button> */}
-                {/* <button onClick={() => setRandom(random + 1)}>Random</button> */}
-          </div>
+            </div>
         </div>
-      </div>
     )
-}
-
-const CitiesThumb = (props) => (
-    <div className="spacing">
-      {props.cities.map((name, i) => {
-        return (
-          <div className="spacing" key={i}>
-              {name.nameCity}
-           </div> 
-        )
-      })}
-    </div>
-  );
+};
