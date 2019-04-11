@@ -14,6 +14,7 @@ function ChildComponent (props) {
     // it prior to unmounting.
     return () => console.log('unmounting...');
     })
+
     return(
         <div key={props.activeCity} >
             {propCities[props.activeCity].nameCity}
@@ -31,6 +32,15 @@ export default function AppHooks () {
         },
         {
             nameCity: "Białystok"
+        },
+        {
+            nameCity: "Wrocław"
+        },
+        {
+            nameCity: "Gdańsk"
+        },
+        {
+            nameCity: "Poznań"
         }
     ])
     const [activeCity, setActiveCity] = useState(0);
