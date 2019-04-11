@@ -7,7 +7,7 @@ function ChildComponent (props) {
     useEffect(() => {
       // This gets called after every render, by default
     // (the first one, and every one after that)
-    console.log('render!');
+    console.log('render! ' + propCities[props.activeCity].nameCity);
 
     // If you want to implement componentWillUnmount,
     // return a function from here, and React will call
@@ -47,14 +47,19 @@ export default function AppHooks () {
     return(
         <div className="containerCities">
             <div className="container">
-                <div className="citiesShow" key={activeCity}>
-                    {cities[activeCity].nameCity}
-                </div>
-                <div className="citiesShow2">
-                    <a className="waves-effect waves-light  lime accent-2 btn" onClick={e => randomCities(e)}>Random Cities</a>
-                </div>
-                <div className="citiesShow3">
-                    <ChildComponent cities={cities} activeCity={activeCity} />
+                <div>
+                    <div className="citiesShow cit1" key={activeCity}>
+                        {cities[activeCity].nameCity}
+                    </div>
+                    <div className="bg"></div>
+                    <div className="citiesShow2 cit2">
+                        <a className="waves-effect waves-light  lime accent-2 btn" onClick={e => randomCities(e)}>Random Cities</a>
+                    </div>
+                    <div className="bg"></div>
+                    <div className="citiesShow3 cit3">
+                        <ChildComponent cities={cities} activeCity={activeCity} />
+                    </div>
+                    <div className="bg"></div>
                 </div>
             </div>
         </div>
