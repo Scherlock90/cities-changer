@@ -71,7 +71,11 @@ export default function AppHooks () {
             </div>
         </div>
     )
+<<<<<<< HEAD
 };
 
 
 
+=======
+};
+>>>>>>> 635a664e8907106051e6b2b77a24652e506a5f29

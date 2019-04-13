@@ -2,7 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #fafafa;
+  background-color: lightblue;
+  height: -webkit-fill-available;
+  justify-content: center;
+  display: flex;
+  align-content: center;
 }
 
 .App {
@@ -17,6 +21,7 @@ body {
   background-color: lightblue;
 }
 .container{
+<<<<<<< HEAD
   margin: 8em;
   width: 600px;
 }
@@ -42,13 +47,56 @@ body {
   font-size: 20px;
   z-index: 2;
   position: relative;
+=======
+  width: 600px;
+  padding: 4em;
+}
+.container .citiesShow
+{
+  font-size: 20px;
+  z-index: 2;
+>>>>>>> 635a664e8907106051e6b2b77a24652e506a5f29
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+<<<<<<< HEAD
+  display: relative;
+  background-color: #00796b;
+  color: #eeff41;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, .2);
+}
+.container .citiesShow3
+=======
+  color: #eeff41;
+  display: relative;
+  background-color: #00bfa5;
+  border-radius: 50%;
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, .2);
+}
+.container .citiesShow2
+>>>>>>> 635a664e8907106051e6b2b77a24652e506a5f29
+{
+  font-size: 20px;
+  z-index: 2;
+  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   height: 200px;
   width: 200px;
+  color: #c6ff00;
   display: relative;
+<<<<<<< HEAD
+=======
   background-color: #00796b;
   color: #eeff41;
   margin-left: auto;
@@ -69,6 +117,7 @@ body {
   width: 200px;
   color: #c6ff00;
   display: relative;
+>>>>>>> 635a664e8907106051e6b2b77a24652e506a5f29
   background-color: #004d40;
   margin-left: auto;
   border-radius: 50%;
@@ -114,13 +163,21 @@ body {
 .container .citiesShow2.cit2:hover
 {
   opacity: 1;
+<<<<<<< HEAD
   background: linear-gradient( #eeff41, #f4ff81)
+=======
+  background: linear-gradient( #eeff41, #454b0b)
+>>>>>>> 635a664e8907106051e6b2b77a24652e506a5f29
 }
 .container .citiesShow3.cit3:hover ~ .bg,
 .container .citiesShow3.cit3:hover
 {
   opacity: 1;
+<<<<<<< HEAD
   background: linear-gradient(#ffc107, #ffd740 )
+=======
+  background: linear-gradient(#ffc107, #6b5710 )
+>>>>>>> 635a664e8907106051e6b2b77a24652e506a5f29
 }
 .buttonStyle{
   color: #eeff41;
@@ -130,4 +187,35 @@ body {
   color: #212121;
   font-weight: bold;
   cursor: pointer;
+<<<<<<< HEAD
+=======
+}
+
+@media only screen and (max-width: 1400px) 
+{
+  .container{
+    padding: 2em;
+  }
+  .container .citiesShow 
+  {
+    height: 170px;
+    width: 170px;
+  }
+  .container .citiesShow2 
+  {
+    height: 180px;
+    width: 180px;
+  }
+  .container .citiesShow3 
+  {
+    height: 190px;
+    width: 190px;
+  }
+}
+@media only screen and (max-width: 600px) 
+{
+   .container{
+    width: 100%;
+   }
+>>>>>>> 635a664e8907106051e6b2b77a24652e506a5f29
 }
