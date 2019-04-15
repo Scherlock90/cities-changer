@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/cities-changer/static/js/runtime~main.e17815ac.js"
   },
   {
-    "revision": "c8382e4ec320594d439d",
-    "url": "/cities-changer/static/js/main.844a673d.chunk.js"
+    "revision": "f8b2ac4d7a47b16acfbc",
+    "url": "/cities-changer/static/js/main.cc506c69.chunk.js"
   },
   {
     "revision": "72c252c37735d2180df8",
     "url": "/cities-changer/static/js/2.c2695c00.chunk.js"
   },
   {
-    "revision": "c8382e4ec320594d439d",
-    "url": "/cities-changer/static/css/main.3f9ccda6.chunk.css"
+    "revision": "f8b2ac4d7a47b16acfbc",
+    "url": "/cities-changer/static/css/main.1d08cb2d.chunk.css"
   },
   {
-    "revision": "6cb45f3aba93db8fa0605990d0fdc4b6",
+    "revision": "ba36e3e28f722e117792b4bc94d24e60",
     "url": "/cities-changer/index.html"
   }
 ];
