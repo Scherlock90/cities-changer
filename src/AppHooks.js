@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import './App.css';
+import './AppHooks.css';
+import Footer from './Footer';
 
 function ChildComponent (props) {
     const [propCities, setPropCities] = useState(props.cities)
@@ -67,6 +68,7 @@ export default function AppHooks () {
                         <ChildComponent cities={cities} activeCity={activeCity} />
                     </div>
                     <div className="bg"></div>
+                    <Footer />
                 </div>
             </div>
         </div>
