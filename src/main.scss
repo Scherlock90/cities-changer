@@ -21,8 +21,6 @@
     color:#424242;
     font-size: 30px;
 }
-
-
 //another code scss
 body {
     @include center-element;
@@ -33,9 +31,9 @@ body {
     height: -webkit-fill-available;
   }
 .containerCities{
-    height: -webkit-fill-available;
-    width: 100%;
     @include center-element;
+    height: -webkit-fill-available;
+    width: 100%;    
     background-color: lightblue;
     .container {
         width: 600px;
@@ -57,9 +55,8 @@ body {
             {
                 height: 190px;
                 width: 190px;
-            }
-                
-            }
+            }                
+        }
         @media screen and (max-width: 900px) {
             padding: 2em;
             width: 100%;
@@ -67,8 +64,7 @@ body {
         }
         @media screen and (max-width: 600px) {
             width: 100%;
-        }
-        
+        }        
        div .citiesShow {
             @include center-element;
             @include size-whell;          
@@ -111,9 +107,7 @@ body {
             height: 100%;
         }    
     }
-}
-  
-  
+}    
 .container .citiesShow.cit1:hover ~ .bg,
 .container .citiesShow.cit1:hover
 {
