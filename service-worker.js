@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cities-changer/precache-manifest.f456580ecb4a5ffc956e6bfabe95409c.js"
+  "/cities-changer/precache-manifest.596c664562ce59eac023372840b61da2.js"
 );
 
 workbox.clientsClaim();
