@@ -1,19 +1,41 @@
+// mixins
+@mixin center-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin size-whell {
+    width: 200px;
+    height: 200px;    
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    display: relative;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, .2);
+}
+@mixin hover-whell {
+    background-color: #212121;
+    box-shadow: -20px 50px 100px rgba(0, 0, 0, .5);
+    color:#424242;
+    font-size: 30px;
+}
+
+
+//another code scss
 body {
+    @include center-element;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background-color: lightblue;
     height: -webkit-fill-available;
-    justify-content: center;
-    display: flex;
-    align-content: center;
   }
 .containerCities{
     height: -webkit-fill-available;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center-element;
     background-color: lightblue;
     .container {
         width: 600px;
@@ -48,74 +70,33 @@ body {
         }
         
        div .citiesShow {
-            font-size: 20px;
-            z-index: 2;
-            display: flex;
-            position: relative;
-            flex-wrap: wrap;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: center;
-            height: 200px;
-            width: 200px;
-            color: #eeff41;
-            display: relative;
-            background-color: #00bfa5;
-            border-radius: 50%;
-            box-shadow: -10px 25px 50px rgba(0, 0, 0, .2);
+            @include center-element;
+            @include size-whell;          
+            color: #eeff41;            
+            background-color: #00bfa5;            
             &:hover{
-                background-color: #212121;
-                box-shadow: -20px 50px 100px rgba(0, 0, 0, .5);
-                color:#424242;
-                font-size: 30px;
+                @include hover-whell;
             }
         }
         div .citiesShow2 {
-            font-size: 20px;
-            z-index: 2;
-            position: relative;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: center;
-            height: 200px;
-            width: 200px;
+            @include center-element;
+            @include size-whell;
             color: #c6ff00;
-            display: relative;
             background-color: #00796b;
-            color: #eeff41;
             margin-left: auto;
             margin-right: auto;
-            border-radius: 50%;
-            box-shadow: -10px 25px 50px rgba(0, 0, 0, .2);
             &:hover{
-                background-color: #212121;
-                box-shadow: -20px 50px 100px rgba(0, 0, 0, .5);
-                color:#424242;
-                font-size: 30px;
+                @include hover-whell;
             }
         }
         div .citiesShow3 {
-            font-size: 20px;
-            z-index: 2;
-            position: relative;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: center;
-            height: 200px;
-            width: 200px;
+            @include center-element;
+            @include size-whell;
             color: #c6ff00;
-            display: relative;
             background-color: #004d40;
             margin-left: auto;
-            border-radius: 50%;
-            box-shadow: -10px 25px 50px rgba(0, 0, 0, .2);
             &:hover{
-                background-color: #212121; 
-                box-shadow: -20px 50px 100px rgba(0, 0, 0, .5);
-                color:#424242;
-                font-size: 30px;
+                @include hover-whell;
             }
         } 
         .bg {
