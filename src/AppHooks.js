@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './AppHooks.css';
+import './main.css';
 import Footer from './Footer';
 
 function ChildComponent (props) {
