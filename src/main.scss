@@ -8,11 +8,7 @@ body {
     display: flex;
     align-content: center;
   }
-  
-  .App {
-    text-align: center;
-  }
-  .containerCities{
+.containerCities{
     height: -webkit-fill-available;
     width: 100%;
     display: flex;
@@ -22,7 +18,36 @@ body {
     .container {
         width: 600px;
         padding: 4em;
-        .citiesShow {
+        @media screen and (max-width: 1400px) {
+            padding: 2em;
+            width: 100%;
+            width: 700px;
+            .citiesShow {
+                height: 170px;
+                width: 170px;
+            }
+            .citiesShow2 
+            {
+                height: 180px;
+                width: 180px;
+            }
+            .citiesShow3 
+            {
+                height: 190px;
+                width: 190px;
+            }
+                
+            }
+        @media screen and (max-width: 900px) {
+            padding: 2em;
+            width: 100%;
+            width: 620px;
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+        
+       div .citiesShow {
             font-size: 20px;
             z-index: 2;
             display: flex;
@@ -45,7 +70,7 @@ body {
                 font-size: 30px;
             }
         }
-        .citiesShow2 {
+        div .citiesShow2 {
             font-size: 20px;
             z-index: 2;
             position: relative;
@@ -70,7 +95,7 @@ body {
                 font-size: 30px;
             }
         }
-        .citiesShow3 {
+        div .citiesShow3 {
             font-size: 20px;
             z-index: 2;
             position: relative;
@@ -108,71 +133,30 @@ body {
 }
   
   
-  .container .citiesShow.cit1:hover ~ .bg,
-  .container .citiesShow.cit1:hover
-  {
+.container .citiesShow.cit1:hover ~ .bg,
+.container .citiesShow.cit1:hover
+{
     opacity: 1;
     background: linear-gradient(#c6ff00, #827717)
-  }
-  .container .citiesShow2.cit2:hover ~ .bg, 
-  .container .citiesShow2.cit2:hover
-  {
+}
+.container .citiesShow2.cit2:hover ~ .bg, 
+.container .citiesShow2.cit2:hover
+{
     opacity: 1;
     background: linear-gradient( #eeff41, #454b0b)
-  }
-  .container .citiesShow3.cit3:hover ~ .bg,
-  .container .citiesShow3.cit3:hover
-  {
+}
+.container .citiesShow3.cit3:hover ~ .bg,
+.container .citiesShow3.cit3:hover
+{
     opacity: 1;
     background: linear-gradient(#ffc107, #6b5710 )
-  }
-  .buttonStyle{
+}
+.buttonStyle{
     color: #eeff41;
     background-color: #424242; 
-  }
-  .btn{
+}
+.btn{
     color: #212121;
     font-weight: bold;
     cursor: pointer;
-  }
-  
-@media only screen and (max-width: 1400px) 
-{
-    .container{
-        padding: 2em;
-        .citiesShow {
-            height: 170px;
-            width: 170px;
-        }
-        .citiesShow2 
-        {
-            height: 180px;
-            width: 180px;
-        }
-        .citiesShow3 
-        {
-            height: 190px;
-            width: 190px;
-        }
-    } 
-}
-@media only screen and (max-width: 600px) 
-{
-    .container{
-        padding: 2em;
-        .citiesShow {
-            height: 170px;
-            width: 170px;
-        }
-        .citiesShow2 
-        {
-            height: 180px;
-            width: 180px;
-        }
-        .citiesShow3 
-        {
-            height: 190px;
-            width: 190px;
-        }
-    } 
 }
