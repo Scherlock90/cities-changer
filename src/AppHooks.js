@@ -49,7 +49,7 @@ export default function AppHooks () {
     return(
         <div className="containerCities">
             <div className="container">
-                <div>
+                <div className="closerContainer">
                     <div className="citiesShow cit1" key={activeCity}>
                         {cities[activeCity].nameCity}
                     </div>

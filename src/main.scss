@@ -38,6 +38,14 @@ body {
     .container {
         width: 600px;
         padding: 4em;
+        .closerContainer{
+            display: grid;
+            height: -webkit-fill-available;
+            max-width: 500px;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+        }
         @media screen and (max-width: 1400px) {
             padding: 2em;
             width: 100%;
@@ -96,7 +104,7 @@ body {
             }
         } 
         .bg {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             z-index: 1;

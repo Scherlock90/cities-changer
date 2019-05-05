@@ -23,6 +23,15 @@ body {
   padding: 4em;
 }
 
+.containerCities .container .closerContainer {
+  display: grid;
+  height: -webkit-fill-available;
+  max-width: 500px;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1400px) {
   .containerCities .container {
     padding: 2em;
@@ -133,7 +142,7 @@ body {
 }
 
 .containerCities .container .bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
