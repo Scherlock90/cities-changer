@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import * as serviceWorker from './serviceWorker';
-import AppHooks from './AppHooks';
+import App from './App';
 
-ReactDOM.render(<AppHooks />, document.getElementById('root'));
-serviceWorker.unregister();
+ReactDOM.render(
+    <App />, 
+    document.getElementById('root')
+);
