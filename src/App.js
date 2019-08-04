@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AppView from './Components/AppView';
 import ChildComponent from './Components/ChildComponent';
 import Footer from './Components/Footer';
-import './Styles/main.css';
+import './Styles/main.scss';
 
 export default function App() {
     const [activeCity, setActiveCity] = useState(0);
