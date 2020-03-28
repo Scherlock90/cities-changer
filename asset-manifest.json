@@ -1,13 +1,13 @@
 {
-  "main.css": "/cities-changer/static/css/main.993a1587.chunk.css",
-  "main.js": "/cities-changer/static/js/main.12499386.chunk.js",
-  "main.js.map": "/cities-changer/static/js/main.12499386.chunk.js.map",
+  "main.css": "/cities-changer/static/css/main.576f8256.chunk.css",
+  "main.js": "/cities-changer/static/js/main.699e607d.chunk.js",
+  "main.js.map": "/cities-changer/static/js/main.699e607d.chunk.js.map",
   "runtime~main.js": "/cities-changer/static/js/runtime~main.e17815ac.js",
   "runtime~main.js.map": "/cities-changer/static/js/runtime~main.e17815ac.js.map",
-  "static/js/2.18f17ee2.chunk.js": "/cities-changer/static/js/2.18f17ee2.chunk.js",
-  "static/js/2.18f17ee2.chunk.js.map": "/cities-changer/static/js/2.18f17ee2.chunk.js.map",
+  "static/js/2.c2695c00.chunk.js": "/cities-changer/static/js/2.c2695c00.chunk.js",
+  "static/js/2.c2695c00.chunk.js.map": "/cities-changer/static/js/2.c2695c00.chunk.js.map",
   "index.html": "/cities-changer/index.html",
-  "precache-manifest.69b35016a149e8d4fb51968fdbb314d1.js": "/cities-changer/precache-manifest.69b35016a149e8d4fb51968fdbb314d1.js",
+  "precache-manifest.396d4302adea4f38953405fd0bfce073.js": "/cities-changer/precache-manifest.396d4302adea4f38953405fd0bfce073.js",
   "service-worker.js": "/cities-changer/service-worker.js",
-  "static/css/main.993a1587.chunk.css.map": "/cities-changer/static/css/main.993a1587.chunk.css.map"
+  "static/css/main.576f8256.chunk.css.map": "/cities-changer/static/css/main.576f8256.chunk.css.map"
 }
