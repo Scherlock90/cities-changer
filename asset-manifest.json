@@ -1,5 +1,5 @@
 {
-  "main.css": "/cities-changer/static/css/main.576f8256.chunk.css",
+  "main.css": "/cities-changer/static/css/main.59cd300a.chunk.css",
   "main.js": "/cities-changer/static/js/main.699e607d.chunk.js",
   "main.js.map": "/cities-changer/static/js/main.699e607d.chunk.js.map",
   "runtime~main.js": "/cities-changer/static/js/runtime~main.e17815ac.js",
@@ -7,7 +7,7 @@
   "static/js/2.c2695c00.chunk.js": "/cities-changer/static/js/2.c2695c00.chunk.js",
   "static/js/2.c2695c00.chunk.js.map": "/cities-changer/static/js/2.c2695c00.chunk.js.map",
   "index.html": "/cities-changer/index.html",
-  "precache-manifest.396d4302adea4f38953405fd0bfce073.js": "/cities-changer/precache-manifest.396d4302adea4f38953405fd0bfce073.js",
+  "precache-manifest.b9dc6e3acfe81e0b1e5aedc5884718d0.js": "/cities-changer/precache-manifest.b9dc6e3acfe81e0b1e5aedc5884718d0.js",
   "service-worker.js": "/cities-changer/service-worker.js",
-  "static/css/main.576f8256.chunk.css.map": "/cities-changer/static/css/main.576f8256.chunk.css.map"
+  "static/css/main.59cd300a.chunk.css.map": "/cities-changer/static/css/main.59cd300a.chunk.css.map"
 }
